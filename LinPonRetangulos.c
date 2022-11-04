@@ -29,9 +29,9 @@ SDL_Rect t = {350,350, 40,40};
 SDL_RenderFillRect(ren, &t);
 /*reta*/
 SDL_SetRenderDrawColor(ren, 0xFF,0x00,0xFF,0x00);
-SDL_LINE (200,200, 250,250);
+SDL_Line (200,200, 250,250);
 SDL_SetRenderDrawColor(ren, 0xFF,0x00,0x00,0x00);
-SDL_LINE (100,100, 150,150);
+SDL_Line (100,100, 150,150);
 /*ponto*/
 SDL_SetRenderDrawColor(ren, 0xFF,0x00,0x00,0x00); 
 SDL_Point q = {100,50};
