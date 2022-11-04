@@ -33,7 +33,7 @@ SDL_Line v = {200,200,250,250};
 SDL_SetRenderDrawColor(ren, 0xFF,0x00,0x00,0x00);
 SDL_Line x = {100,100,150,150};
 /*ponto*/
-SDL_SetDrawColor(ren, 0xFF,0x00,0x00,0x00); 
+SDL_SetRenderDrawColor(ren, 0xFF,0x00,0x00,0x00); 
 SDL_Point q = {100,50};
   
   
