@@ -14,6 +14,7 @@ SDL_Renderer* ren = SDL_CreateRenderer(win, -1,0);
 /*EXECUÇÃO*/
 SDL_SetRenderDrawColor(ren, 0xFF,0xFF,0xFF,0x00);
 SDL_RenderClear(ren);
+/*retangulo*/  
 SDL_SetRenderDrawColor(ren, 0x00,0x00,0xFF,0x00);
 SDL_Rect r = {40,20, 10,10};
 SDL_RenderFillRect(ren, &r);
@@ -26,16 +27,18 @@ SDL_RenderFillRect(ren, &u);
 SDL_SetRenderDrawColor(ren, 0xFF,0x00,0x00,0x00);
 SDL_Rect t = {350,350, 40,40};
 SDL_RenderFillRect(ren, &t);
-
+/*reta*/
 SDL_SetRenderDrawColor(ren, 0xFF,0x00,0xFF,0x00);
-SDL_Rect v = {200,200};
-SDL_RenderFillRect(ren, &v);
+SDL_Line v = {200,200,250,250};
 SDL_SetRenderDrawColor(ren, 0xFF,0x00,0x00,0x00);
-SDL_Rect x = {100,100};
-SDL_RenderFillRect(ren, &x);
+SDL_Line x = {100,100,150,150};
+/*ponto*/
+SDL_SetDrawColor(ren, 0xFF,0x00,0x00,0x00); 
+SDL_Point q = {100,50};
+  
+  
   
 SDL_RenderPresent(ren);
-
 SDL_Delay(9000);
 
 /*FINALIZAÇÃO*/
