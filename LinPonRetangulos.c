@@ -17,12 +17,18 @@ SDL_RenderClear(ren);
 SDL_SetRenderDrawColor(ren, 0x00,0x00,0xFF,0x00);
 SDL_Rect r = {40,20, 10,10};
 SDL_RenderFillRect(ren, &r);
-SDL_RenderPresent(ren);SDL_SetRenderDrawColor(ren, 0x00,0xFF,0x00,0x00);
+SDL_SetRenderDrawColor(ren, 0x00,0xFF,0x00,0x00);
 SDL_Rect s = {0,0, 40,20};
 SDL_RenderFillRect(ren, &s);
+SDL_SetRenderDrawColor(ren, 0xFF,0x00,0xFF,0x00);
+SDL_Rect u = {0,350, 40,40};
+SDL_RenderFillRect(ren, &u);
+SDL_SetRenderDrawColor(ren, 0xFF,0x00,0x00,0x00);
+SDL_Rect t = {350,350, 40,40};
+SDL_RenderFillRect(ren, &t);
 SDL_RenderPresent(ren);
 
-SDL_Delay(5000);
+SDL_Delay(9000);
 
 /*FINALIZAÇÃO*/
 SDL_DestroyRenderer(ren);
