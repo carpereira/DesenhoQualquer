@@ -28,10 +28,10 @@ SDL_Rect t = {350,350, 40,40};
 SDL_RenderFillRect(ren, &t);
 
 SDL_SetRenderDrawColor(ren, 0xFF,0x00,0xFF,0x00);
-SDL_Rect v = {200,200, 0,0};
+SDL_Rect v = {200,200};
 SDL_RenderFillRect(ren, &v);
 SDL_SetRenderDrawColor(ren, 0xFF,0x00,0x00,0x00);
-SDL_Rect x = {100,100, 0,0};
+SDL_Rect x = {100,100};
 SDL_RenderFillRect(ren, &x);
   
 SDL_RenderPresent(ren);
