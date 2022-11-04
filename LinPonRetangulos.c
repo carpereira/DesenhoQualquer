@@ -49,14 +49,20 @@ SDL_RenderFillRect(ren, &h);
 SDL_SetRenderDrawColor(ren, 0xFF,0x00,0xFF,0x00);
 SDL_RenderDrawLine (ren,200,200, 250,250);
 SDL_SetRenderDrawColor(ren, 0xFF,0x00,0x00,0x00);
-SDL_RenderDrawLine (ren,100,100, 150,150);
+SDL_RenderDrawLine (ren,100,130, 150,150);
 SDL_SetRenderDrawColor(ren, 0xFF,0x00,0x00,0x00);
 SDL_RenderDrawLine (ren,300,200, 250,250);
-SDL_SetRenderDrawColor(ren, 0xFF,0xFF,0xFF,0x00);
+SDL_SetRenderDrawColor(ren, 0xFF,0xFF,0xFF,0x00); 
 SDL_RenderDrawLine (ren,200,100, 150,150);
 /*ponto*/
 SDL_SetRenderDrawColor(ren, 0xFF,0x00,0x00,0x00); 
-SDL_Point q = {100,50};
+SDL_DrawPoint (ren 100,50);,0xFF,0x00);
+
+/*ponto*/
+SDL_SetRenderDrawColor(ren, 0xFF,0x00,0x00,0x00); 
+SDL_DrawPoint (ren 100,50);
+  SDL_SetRenderDrawColor(ren, 0xFF,0x00,0x00,0x00); 
+SDL_DrawPoint (ren 100,50);
   
   
   
