@@ -15,8 +15,8 @@ SDL_Renderer* ren = SDL_CreateRenderer(win, -1,0);
 SDL_SetRenderDrawColor(ren, 0xFF,0xFF,0xFF,0x00);
 SDL_RenderClear(ren);
 
-for (int i=0; i<400;i++){
-  for (int j=400; j>0; j--)
+for (int i=0; i<200;i++){
+  for (int j=200; j>0; j--)
   {
     if (i>j)
     {
