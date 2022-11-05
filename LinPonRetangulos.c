@@ -68,7 +68,7 @@ SDL_RenderDrawPoint(ren, 250,300);
 SDL_SetRenderDrawColor(ren, 0xFF,0xFF,0x00,0x00); 
 SDL_RenderDrawPoint(ren, 200,50);  
 SDL_SetRenderDrawColor(ren, 0xFF,0xFF,0xFF,0x00); 
-SDL_RenderDrawPoint(ren, 300,250);
+SDL_RenderDrawPoint(ren, 200,200);
   
 SDL_RenderPresent(ren);
 SDL_Delay(9000);
