@@ -15,17 +15,17 @@ SDL_Renderer* ren = SDL_CreateRenderer(win, -1,0);
 SDL_SetRenderDrawColor(ren, 0xFF,0xFF,0xFF,0x00);
 SDL_RenderClear(ren);
 
-for (int i=0; i<200;i+=5){
-  for (int j=200; j>0; j-=5)
+for (int i=0; i<400;i+=10){
+  for (int j=400; j>0; j-=10)
   {
     if (i>j)
     {
-      SDL_SetRenderDrawColor(ren, 0xFF,0x00,0xFF,0x00);
+      SDL_SetRenderDrawColor(ren, 0xFF,0x00,0x00,0x00);
       SDL_RenderDrawPoint(ren,j,i);
     }
     else
     {
-      SDL_SetRenderDrawColor(ren, 0x00,0xFF,0xFF,0x00);
+      SDL_SetRenderDrawColor(ren, 0x00,0x00,0xFF,0x00);
       SDL_RenderDrawPoint(ren,j,i);
     }
   }
