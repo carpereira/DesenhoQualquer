@@ -71,7 +71,7 @@ SDL_SetRenderDrawColor(ren, 0xFF,0xFF,0xFF,0x00);
 //SDL_RenderDrawPoint(ren, 200,200);
 for(int i=0; i<400; i +=4)
 {
-  SDL_RenderDrawPoint(ren 200, i);
+  SDL_RenderDrawPoint(ren, 200, i);
 }
   
 SDL_RenderPresent(ren);
