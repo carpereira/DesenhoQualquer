@@ -4,7 +4,7 @@ int main(int argc, char* args[])
 {
 /*INICIALIZAÇÃO*/
 SDL_Init(SDL_INIT_EVERYTHING);
-SDL_Window* win = SDL_CreateWindowAndRenderer("Linhas, pontos e retangulos!",
+SDL_Window* win = SDL_CreateWindowAndRenderer("Linhas pontos e retangulos!",
                       SDL_WINDOWPOS_UNDEFINED,
                       SDL_WINDOWPOS_UNDEFINED,
                       400, 400, SDL_WINDOW_SHOWN
