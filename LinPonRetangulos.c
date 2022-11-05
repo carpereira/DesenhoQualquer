@@ -4,7 +4,7 @@ int main(int argc, char* args[])
 {
 /*INICIALIZAÇÃO*/
 SDL_Init(SDL_INIT_EVERYTHING);
-SDL_Window* win = SDL_CreateWindowAndRenderer("Linhas pontos e retangulos!",
+SDL_Window* win = SDL_CreateWindow("Linhas pontos e retangulos!",
                       SDL_WINDOWPOS_UNDEFINED,
                       SDL_WINDOWPOS_UNDEFINED,
                       400, 400, SDL_WINDOW_SHOWN
@@ -56,19 +56,19 @@ SDL_SetRenderDrawColor(ren, 0xFF,0xFF,0xFF,0x00);
 SDL_RenderDrawLine (ren,200,100, 150,150);
 /*ponto*/
 SDL_SetRenderDrawColor(ren, 0xFF,0x00,0x00,0x00); 
-SDL_RenderDrawPoint(gren, 100,50);
+SDL_RenderDrawPoint(ren, 100,50);
 SDL_SetRenderDrawColor(ren, 0xFF,0x00,0xFF,0x00); 
-SDL_RenderDrawPoint(gren,300,150);
+SDL_RenderDrawPoint(ren,300,150);
 SDL_SetRenderDrawColor(ren, 0x00,0xFF,0x00,0x00); 
-SDL_RenderDrawPoint(gren, 100,250);
+SDL_RenderDrawPoint(ren, 100,250);
 SDL_SetRenderDrawColor(ren, 0x00,0x00,0xFF,0x00); 
-SDL_RenderDrawPoint(gren, 200,50);
+SDL_RenderDrawPoint(ren, 200,50);
 SDL_SetRenderDrawColor(ren, 0x00,0xFF,0xFF,0x00); 
-SDL_RenderDrawPoint(gren, 250,300);
+SDL_RenderDrawPoint(ren, 250,300);
 SDL_SetRenderDrawColor(ren, 0xFF,0xFF,0x00,0x00); 
-SDL_RenderDrawPoint(gren, 200,50);  
+SDL_RenderDrawPoint(ren, 200,50);  
 SDL_SetRenderDrawColor(ren, 0xFF,0xFF,0xFF,0x00); 
-SDL_RenderDrawPoint(gren, 300,250);
+SDL_RenderDrawPoint(ren, 300,250);
   
 SDL_RenderPresent(ren);
 SDL_Delay(9000);
