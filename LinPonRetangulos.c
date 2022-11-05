@@ -56,8 +56,8 @@ SDL_SetRenderDrawColor(ren, 0xFF,0xFF,0xFF,0x00);
 SDL_RenderDrawLine (ren,200,100, 150,150);
 /*ponto*/
 SDL_SetRenderDrawColor(ren, 0xFF,0x00,0x00,0x00); 
-SDL_RenderDrawPoint (100,50);
-/*SDL_RenderDrawPoint (ren, 100,50);*/
+/*SDL_RenderDrawPoint (100,50);*/
+SDL_RenderDrawPoint (ren, 100,50);
 SDL_SetRenderDrawColor(ren, 0xFF,0x00,0xFF,0x00); 
 SDL_RenderDrawPoint (ren,300,150);
 /*SDL_SetRenderDrawColor(ren, 0x00,0xFF,0x00,0x00); 
