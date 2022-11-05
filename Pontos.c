@@ -20,7 +20,7 @@ for (int i=0; i<400;i++){
   {
     if (i>j)
     {
-      SDL_SetRenderDrawColor(renderer, 50,255,90,255);
+      SDL_SetRenderDrawColor(ren, 0xFF,0x00,0xFF,0x00);
       SDL_RenderDrawPoint(renderer,j,i);
     }
     else
