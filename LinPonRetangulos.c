@@ -68,7 +68,11 @@ SDL_RenderDrawPoint(ren, 250,300);
 SDL_SetRenderDrawColor(ren, 0xFF,0xFF,0x00,0x00); 
 SDL_RenderDrawPoint(ren, 200,50);  
 SDL_SetRenderDrawColor(ren, 0xFF,0xFF,0xFF,0x00); 
-SDL_RenderDrawPoint(ren, 200,200);
+//SDL_RenderDrawPoint(ren, 200,200);
+for(int i=0; i<SCREEN_HEIGHT; i +=4)
+{
+  SDL_RenderDrawPoint(gRenderer SCREEN_WIDTH / 2, i);
+}
   
 SDL_RenderPresent(ren);
 SDL_Delay(9000);
